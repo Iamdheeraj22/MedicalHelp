@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragments.PreHome.LoginFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessLeaf,UselessParent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_50sdp"
+                android:orientation="vertical"
+                tools:ignore="UselessParent">
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_80sdp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/logo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/nunito_medium"
+                    android:text="@string/sign_in"
+                    android:textColor="@color/skyblue"
+                    android:textSize="@dimen/_24sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/nunito_medium"
+                    android:text="@string/unlock_your_personal_nmedical_records"
+                    android:textColor="@color/skyblue"
+                    android:textSize="@dimen/_14sdp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textField"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:hint="@string/email"
+                    app:startIconDrawable="@drawable/ic_email"
+                    app:startIconTint="@color/skyblue">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:hint="@string/password"
+                    app:endIconMode="password_toggle"
+                    app:startIconDrawable="@drawable/ic_baseline_lock_24"
+                    app:startIconTint="@color/skyblue">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/forget_psswd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:fontFamily="@font/nunito_medium"
+                    android:text="@string/forget_password"
+                    android:textColor="@color/skyblue"
+                    android:textSize="@dimen/_14sdp"
+                    tools:ignore="RtlHardcoded" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:background="@drawable/common_button_bck"
+                    android:fontFamily="@font/nunito_medium"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:text="@string/sign_in"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/_16sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/nunito_medium"
+                    android:text="@string/sign_in_with_mobilenumber"
+                    android:textColor="@color/skyblue"
+                    android:textSize="@dimen/_14sdp" />
+
+                <LinearLayout
+                    android:id="@+id/googleSignBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/google" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:fontFamily="@font/nunito_medium"
+                        android:text="@string/sign_in_with_google"
+                        android:textColor="@color/skyblue"
+                        android:textSize="@dimen/_14sdp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:textColor="@color/skyblue"
+                    android:textSize="@dimen/_14sdp"
+                    android:fontFamily="@font/nunito_medium"
+                    android:layout_height="wrap_content"
+                    android:text="@string/don_t_have_account"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>

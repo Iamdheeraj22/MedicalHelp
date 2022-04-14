@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.SplashActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150sdp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/medical_help"
+            android:textColor="@color/skyblue"
+            android:fontFamily="@font/nunito_medium"
+            android:textAlignment="center"
+            android:textSize="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/personal_health_record_application"
+            android:fontFamily="@font/nunito_medium"
+            android:textAlignment="center"
+            android:textSize="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_10sdp"/>
+    </LinearLayout>
+
+</RelativeLayout>
