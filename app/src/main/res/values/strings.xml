@@ -12,4 +12,13 @@
     <string name="don_t_have_account">Don\'t have account?<b> SignUp</b></string>
     <string name="sign_in_with_google">Sign In With Google</string>
     <string name="sign_in_with_mobilenumber">Sign In With MobileNumber</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="create_password">Create Password</string>
+    <string name="fullname">Fullname</string>
+    <string name="sign_up_with_phone_number">Sign Up with phone number</string>
+    <string name="sign_up_with_google">Sign Up with Google</string>
+    <string name="already_have_an_account_login">Already have an account?<b> Login</b></string>
+    <string name="reseting_heading">Enter your email we will send you\nreset password link.</string>
+    <string name="send_reset_password_link">Send reset password link</string>
 </resources>

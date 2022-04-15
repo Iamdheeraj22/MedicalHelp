@@ -6,12 +6,15 @@
         <entry key="..\:/Users/Glal9/Desktop/MedicalHelp/app/src/main/res/drawable/common_button_bck.xml" value="0.161" />
         <entry key="..\:/Users/Glal9/Desktop/MedicalHelp/app/src/main/res/drawable/ic_baseline_lock_24.xml" value="0.161" />
         <entry key="..\:/Users/Glal9/Desktop/MedicalHelp/app/src/main/res/drawable/ic_email.xml" value="0.115" />
+        <entry key="..\:/Users/Glal9/Desktop/MedicalHelp/app/src/main/res/drawable/ic_person.xml" value="0.161" />
         <entry key="..\:/Users/Glal9/Desktop/MedicalHelp/app/src/main/res/layout/activity_pre_home.xml" value="0.19427083333333334" />
         <entry key="..\:/Users/Glal9/Desktop/MedicalHelp/app/src/main/res/layout/activity_splash.xml" value="0.22" />
         <entry key="..\:/Users/Glal9/Desktop/MedicalHelp/app/src/main/res/layout/fragment_edit_profile.xml" value="0.19427083333333334" />
+        <entry key="..\:/Users/Glal9/Desktop/MedicalHelp/app/src/main/res/layout/fragment_forget_password.xml" value="0.22" />
         <entry key="..\:/Users/Glal9/Desktop/MedicalHelp/app/src/main/res/layout/fragment_home.xml" value="0.19427083333333334" />
         <entry key="..\:/Users/Glal9/Desktop/MedicalHelp/app/src/main/res/layout/fragment_login.xml" value="0.25" />
         <entry key="..\:/Users/Glal9/Desktop/MedicalHelp/app/src/main/res/layout/fragment_login_with_phone.xml" value="0.19427083333333334" />
+        <entry key="..\:/Users/Glal9/Desktop/MedicalHelp/app/src/main/res/layout/fragment_register.xml" value="0.25" />
         <entry key="..\:/Users/Glal9/Desktop/MedicalHelp/app/src/main/res/layout/fragment_user_profile.xml" value="0.17708333333333334" />
       </map>
     </option>
