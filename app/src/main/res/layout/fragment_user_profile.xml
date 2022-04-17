@@ -5,10 +5,137 @@
     android:layout_height="match_parent"
     tools:context=".ui.fragments.Home.UserProfileFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profile"
+                android:layout_gravity="center"
+                android:textSize="@dimen/_16sdp"
+                android:fontFamily="@font/nunito_semi_bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/_16sdp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:layout_height="wrap_content">
 
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/userImage"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_70sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:src="@drawable/ic_person" />
+                    <LinearLayout
+                        android:id="@+id/userInfo"
+                        android:layout_width="match_parent"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@id/userImage"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/temp_userFullme"
+                                android:fontFamily="@font/nunito_bold"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_16sdp"
+                                android:id="@+id/userFullName"/>
+
+                            <ImageView
+                                android:id="@+id/profileGendertype"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:src="@drawable/ic_men"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_gravity="center"/>
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/temp_email"
+                            android:textSize="@dimen/_14sdp"
+                            android:fontFamily="@font/nunito_medium"
+                            android:id="@+id/userEmail"
+                            android:layout_marginTop="@dimen/_5sdp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/temp_weight_height"
+                            android:textSize="@dimen/_14sdp"
+                            android:fontFamily="@font/nunito_medium"
+                            android:id="@+id/height_weight"
+                            android:layout_marginTop="@dimen/_5sdp"/>
+                    </LinearLayout>
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/edit_profile"
+                    android:id="@+id/editProfileBtn"
+                    android:textSize="@dimen/_16sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingStart="@dimen/_20sdp"
+                    tools:ignore="RtlSymmetry" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/about"
+                    android:id="@+id/about_app_btn"
+                    android:textSize="@dimen/_16sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingStart="@dimen/_20sdp"
+                    tools:ignore="RtlSymmetry" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/logout"
+                    android:id="@+id/logoutButton"
+                    android:textSize="@dimen/_16sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingStart="@dimen/_20sdp"
+                    tools:ignore="RtlSymmetry" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 </FrameLayout>

@@ -40,7 +40,7 @@
         android:id="@+id/loginWithPhoneFragment"
         android:name="com.unknowncoder.medicalhelp.ui.fragments.PreHome.LoginWithPhoneFragment"
         android:label="fragment_login_with_phone"
-        tools:layout="@layout/fragment_login_with_phone" >
+        tools:layout="@layout/fragment_login_register_phone" >
         <action
             android:id="@+id/action_loginWithPhoneFragment_to_verificationPhoneFragment"
             app:destination="@id/verificationPhoneFragment" />

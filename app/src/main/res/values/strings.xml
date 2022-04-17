@@ -21,4 +21,22 @@
     <string name="already_have_an_account_login">Already have an account?<b> Login</b></string>
     <string name="reseting_heading">Enter your email we will send you\nreset password link.</string>
     <string name="send_reset_password_link">Send reset password link</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="send_code">Send Code</string>
+    <string name="verify_your_nphone_number">Verify your\nPhone Number</string>
+    <string name="verification_code">Verification Code</string>
+    <string name="please_type_the_verification_code_sent">Please type the verification code sent</string>
+    <string name="temp_number">to +91 1234567890</string>
+    <string name="verify_code">Verify Code</string>
+    <string name="profile">Profile</string>
+    <string name="temp_userFullme">Dheeraj Prajapat</string>
+    <string name="temp_email">dheerajprajapat@gmail.com</string>
+    <string name="temp_weight_height">Height: 5ft 9in | Weight: 70kg</string>
+    <string name="about">About</string>
+    <string name="logout">Logout</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="height">Height</string>
+    <string name="weight">Weight</string>
+    <string name="save">Save</string>
+    <string name="gender">Gender</string>
 </resources>

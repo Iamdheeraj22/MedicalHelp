@@ -13,6 +13,6 @@ class LoginWithPhoneFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_login_with_phone, container, false)
+        return inflater.inflate(R.layout.fragment_login_register_phone, container, false)
     }
 }

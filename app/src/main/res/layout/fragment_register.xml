@@ -21,14 +21,14 @@
                 android:orientation="vertical"
                 tools:ignore="UselessParent">
 
-            <ImageView
-                android:id="@+id/logo"
-                android:layout_width="@dimen/_50sdp"
-                android:layout_height="@dimen/_50sdp"
-                android:layout_marginStart="@dimen/_20sdp"
-                android:layout_marginTop="@dimen/_80sdp"
-                android:contentDescription="@string/app_name"
-                android:src="@drawable/logo" />
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_80sdp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/logo" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -40,15 +40,15 @@
                     android:textColor="@color/skyblue"
                     android:textSize="@dimen/_24sdp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/_20sdp"
-                android:layout_marginTop="@dimen/_10sdp"
-                android:fontFamily="@font/nunito_medium"
-                android:text="@string/unlock_your_personal_nmedical_records"
-                android:textColor="@color/skyblue"
-                android:textSize="@dimen/_14sdp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/nunito_medium"
+                    android:text="@string/unlock_your_personal_nmedical_records"
+                    android:textColor="@color/skyblue"
+                    android:textSize="@dimen/_14sdp" />
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
@@ -62,11 +62,91 @@
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/et_fullname"
-                        android:inputType="text"
-                        android:fontFamily="@font/nunito_medium"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_medium"
+                        android:inputType="text" />
                 </com.google.android.material.textfield.TextInputLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_20sdp">
+
+
+                    <LinearLayout
+                        android:id="@+id/genderMale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:background="@drawable/black_stroke_background"
+                        android:orientation="vertical"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <ImageView
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_30sdp"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/ic_men" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_30sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginEnd="@dimen/_30sdp"
+                            android:layout_marginBottom="@dimen/_30sdp"
+                            android:fontFamily="@font/nunito_bold"
+                            android:text="Male"
+                            android:textColor="@color/skyblue"
+                            android:textSize="@dimen/_16sdp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/genderfeMale"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_toRightOf="@id/genderMale"
+                        android:background="@drawable/black_stroke_background"
+                        android:orientation="vertical"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <ImageView
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_30sdp"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/ic_female" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_30sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginEnd="@dimen/_30sdp"
+                            android:layout_marginBottom="@dimen/_30sdp"
+                            android:fontFamily="@font/nunito_bold"
+                            android:text="Female"
+                            android:textColor="@color/skyblue"
+                            android:textSize="@dimen/_16sdp" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -79,11 +159,12 @@
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/et_email"
-                        android:inputType="textEmailAddress"
                         android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
                         android:fontFamily="@font/nunito_medium"
-                        android:layout_height="wrap_content" />
+                        android:inputType="textEmailAddress" />
                 </com.google.android.material.textfield.TextInputLayout>
+
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -97,11 +178,12 @@
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/et_password"
-                        android:inputType="textPassword"
-                        android:fontFamily="@font/nunito_medium"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_medium"
+                        android:inputType="textPassword" />
                 </com.google.android.material.textfield.TextInputLayout>
+
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -109,24 +191,23 @@
                     android:layout_marginTop="@dimen/_15sdp"
                     android:layout_marginEnd="@dimen/_20sdp"
                     android:hint="@string/confirm_password"
-                    app:startIconDrawable="@drawable/ic_baseline_lock_24"
                     app:passwordToggleEnabled="true"
+                    app:startIconDrawable="@drawable/ic_baseline_lock_24"
                     app:startIconTint="@color/skyblue">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/et_confirmpassword"
                         android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
                         android:fontFamily="@font/nunito_medium"
-                        android:inputType="textPassword"
-                        android:layout_height="wrap_content" />
+                        android:inputType="textPassword" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <TextView
+                    android:id="@+id/signUpBtn"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:textColor="@color/white"
-                    android:id="@+id/signUpBtn"
                     android:layout_marginStart="@dimen/_20sdp"
                     android:layout_marginTop="@dimen/_20sdp"
                     android:layout_marginEnd="@dimen/_20sdp"
@@ -136,13 +217,14 @@
                     android:paddingBottom="@dimen/_10sdp"
                     android:text="@string/sign_up"
                     android:textAlignment="center"
+                    android:textColor="@color/white"
                     android:textSize="@dimen/_16sdp" />
 
                 <TextView
+                    android:id="@+id/phoneSignUp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:id="@+id/phoneSignUp"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:fontFamily="@font/nunito_medium"
                     android:text="@string/sign_up_with_phone_number"
@@ -176,15 +258,15 @@
                 </LinearLayout>
 
                 <TextView
+                    android:id="@+id/loginUpButton"
                     android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="@dimen/_25sdp"
-                    android:textColor="@color/skyblue"
-                    android:textSize="@dimen/_14sdp"
-                    android:id="@+id/loginUpButton"
                     android:fontFamily="@font/nunito_medium"
-                    android:layout_height="wrap_content"
-                    android:text="@string/already_have_an_account_login"/>
+                    android:text="@string/already_have_an_account_login"
+                    android:textColor="@color/skyblue"
+                    android:textSize="@dimen/_14sdp" />
             </LinearLayout>
         </RelativeLayout>
     </ScrollView>
