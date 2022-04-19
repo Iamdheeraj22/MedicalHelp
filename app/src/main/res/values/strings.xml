@@ -39,4 +39,11 @@
     <string name="weight">Weight</string>
     <string name="save">Save</string>
     <string name="gender">Gender</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="medical_help">Medical Help</string>
+    <string name="hi">Hi!</string>
+    <string name="temp_name">Dheeraj Prajapat</string>
+    <string name="how_s_your_condition">How\'s your condition?</string>
+    <string name="medical_nrecords">Medical\nRecords</string>
 </resources>
