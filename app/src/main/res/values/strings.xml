@@ -2,7 +2,6 @@
     <string name="app_name">Medical Help</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="medical_help">Medical Help</string>
     <string name="personal_health_record_application">Personal health record application</string>
     <string name="sign_in">Sign In</string>
     <string name="unlock_your_personal_nmedical_records">Unlock your personal\nmedical records</string>
@@ -40,10 +39,12 @@
     <string name="save">Save</string>
     <string name="gender">Gender</string>
     <string name="home">Home</string>
-    <string name="profile">Profile</string>
     <string name="medical_help">Medical Help</string>
     <string name="hi">Hi!</string>
     <string name="temp_name">Dheeraj Prajapat</string>
     <string name="how_s_your_condition">How\'s your condition?</string>
     <string name="medical_nrecords">Medical\nRecords</string>
+    <string name="covid_19_ncheck">Covid-19\nCheck</string>
+    <string name="covid_19_nstatus">Covid-19\nStatus</string>
+    <string name="menstrual_nperiod">Menstrual\nPeriod</string>
 </resources>
