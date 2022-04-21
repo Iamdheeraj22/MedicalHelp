@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.unknowncoder.medicalhelp.R
 import com.unknowncoder.medicalhelp.databinding.FragmentHomeBinding
+import com.unknowncoder.medicalhelp.ui.activities.MainActivity
 
 class HomeFragment : Fragment() {
     private lateinit var binding: FragmentHomeBinding
@@ -18,5 +19,12 @@ class HomeFragment : Fragment() {
         // Inflate the layout for this fragment
         binding= FragmentHomeBinding.inflate(inflater, container, false)
         return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        binding.profileBtn.setOnClickListener{
+            findNavController().navigate(R.id.action_homeFragment_to_userProfileFragment)
+        }
     }
 }

@@ -14,7 +14,6 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_above="@+id/coordinator"
             android:orientation="vertical">
 
             <TextView
@@ -220,5 +219,15 @@
                 android:layout_height="match_parent"
                 android:id="@+id/newsRecyclerView"/>
         </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_50sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:src="@drawable/ic_person"
+            android:id="@+id/profileBtn"/>
     </RelativeLayout>
 </FrameLayout>
