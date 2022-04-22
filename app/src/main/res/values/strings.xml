@@ -47,4 +47,13 @@
     <string name="covid_19_ncheck">Covid-19\nCheck</string>
     <string name="covid_19_nstatus">Covid-19\nStatus</string>
     <string name="menstrual_nperiod">Menstrual\nPeriod</string>
+    <string name="add_medical_record">Add Medical Record</string>
+    <string name="select_category">Select Category</string>
+    <string name="diagnose">Diagnose</string>
+    <string name="select_date">Select Date</string>
+    <string name="general_condition">General Condition</string>
+    <string name="blood_presure_mmhg">Blood Presure(mmHg)</string>
+    <string name="body_temperature">Body Temperature(Celsius)</string>
+    <string name="heart_rate_bpm">Heart Rate(Bpm)</string>
+    <string name="save_record">Save Record</string>
 </resources>
