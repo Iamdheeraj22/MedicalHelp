@@ -14,8 +14,8 @@
             android:id="@+id/action_homeFragment_to_userProfileFragment"
             app:destination="@id/userProfileFragment" />
         <action
-            android:id="@+id/action_homeFragment_to_addRecordFragment"
-            app:destination="@id/addRecordFragment" />
+            android:id="@+id/action_homeFragment_to_medicalRecordsFragment"
+            app:destination="@id/medicalRecordsFragment" />
     </fragment>
     <fragment
         android:id="@+id/editProfileFragment"
@@ -46,5 +46,39 @@
         android:id="@+id/addRecordFragment"
         android:name="com.unknowncoder.medicalhelp.ui.fragments.Home.AddRecordFragment"
         android:label="fragment_add_record"
-        tools:layout="@layout/fragment_add_record" />
+        tools:layout="@layout/fragment_add_record" >
+        <action
+            android:id="@+id/action_addRecordFragment_to_medicalRecordsFragment"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/medicalRecordsFragment"
+            app:destination="@id/medicalRecordsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/medicalRecordsFragment"
+        android:name="com.unknowncoder.medicalhelp.ui.fragments.Home.MedicalRecordsFragment"
+        android:label="fragment_medical_records"
+        tools:layout="@layout/fragment_medical_records" >
+        <action
+            android:id="@+id/action_medicalRecordsFragment_to_addRecordFragment"
+            app:destination="@id/addRecordFragment" />
+        <action
+            android:id="@+id/action_medicalRecordsFragment_to_homeFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_medicalRecordsFragment_to_recordsDetailsFragment"
+            app:destination="@id/recordsDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/recordsDetailsFragment"
+        android:name="com.unknowncoder.medicalhelp.ui.fragments.Home.RecordsDetailsFragment"
+        android:label="fragment_records_details"
+        tools:layout="@layout/fragment_records_details" >
+        <action
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/medicalRecordsFragment"
+            android:id="@+id/action_recordsDetailsFragment_to_medicalRecordsFragment"
+            app:destination="@id/medicalRecordsFragment" />
+    </fragment>
 </navigation>

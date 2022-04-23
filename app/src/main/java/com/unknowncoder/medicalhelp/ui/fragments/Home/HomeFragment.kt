@@ -26,9 +26,12 @@ class HomeFragment : Fragment() {
         binding.profileBtn.setOnClickListener{
             findNavController().navigate(R.id.action_homeFragment_to_userProfileFragment)
         }
-
         binding.addRecordButton.setOnClickListener {
-            findNavController().navigate(R.id.action_homeFragment_to_addRecordFragment)
+            findNavController().navigate(R.id.action_homeFragment_to_medicalRecordsFragment)
+        }
+
+        binding.userCardview.setOnClickListener{
+            findNavController().navigate(R.id.action_homeFragment_to_userProfileFragment)
         }
     }
 }

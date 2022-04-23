@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.unknowncoder.medicalhelp.R
 import com.unknowncoder.medicalhelp.databinding.FragmentLoginBinding
 import com.unknowncoder.medicalhelp.ui.activities.MainActivity
@@ -24,6 +25,15 @@ class LoginFragment : Fragment() {
         binding.loginBtn.setOnClickListener {
             startActivity(Intent(requireActivity(),MainActivity::class.java))
             requireActivity().finish()
+        }
+        binding.forgetPsswd.setOnClickListener {
+            findNavController().navigate(R.id.action_loginFragment_to_forgetPasswordFragment)
+        }
+        binding.signUpBtn.setOnClickListener {
+            findNavController().navigate(R.id.action_loginFragment_to_registerFragment)
+        }
+        binding.phoneSignInBtn.setOnClickListener {
+            findNavController().navigate(R.id.action_loginFragment_to_loginWithPhoneFragment)
         }
     }
 }

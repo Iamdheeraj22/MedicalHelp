@@ -75,6 +75,7 @@
                 android:paddingTop="@dimen/_10sdp"
                 android:paddingBottom="@dimen/_10sdp"
                 android:text="@string/send_code"
+                android:id="@+id/sendCode"
                 android:textAlignment="center"
                 android:textSize="@dimen/_16sdp" />
         </LinearLayout>

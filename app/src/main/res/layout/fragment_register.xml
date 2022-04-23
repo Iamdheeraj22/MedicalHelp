@@ -220,17 +220,6 @@
                     android:textColor="@color/white"
                     android:textSize="@dimen/_16sdp" />
 
-                <TextView
-                    android:id="@+id/phoneSignUp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="@dimen/_10sdp"
-                    android:fontFamily="@font/nunito_medium"
-                    android:text="@string/sign_up_with_phone_number"
-                    android:textColor="@color/skyblue"
-                    android:textSize="@dimen/_14sdp" />
-
                 <LinearLayout
                     android:id="@+id/googleSignUpBtn"
                     android:layout_width="wrap_content"
@@ -258,7 +247,8 @@
                 </LinearLayout>
 
                 <TextView
-                    android:id="@+id/loginUpButton"
+                    android:layout_marginBottom="@dimen/_50sdp"
+                    android:id="@+id/loginButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
