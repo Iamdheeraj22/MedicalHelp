@@ -97,6 +97,7 @@
                             android:src="@drawable/ic_men" />
 
                         <TextView
+                            android:id="@+id/maleText"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="@dimen/_30sdp"
@@ -140,6 +141,7 @@
                             android:layout_marginBottom="@dimen/_30sdp"
                             android:fontFamily="@font/nunito_bold"
                             android:text="Female"
+                            android:id="@+id/feMaleText"
                             android:textColor="@color/skyblue"
                             android:textSize="@dimen/_16sdp" />
                     </LinearLayout>

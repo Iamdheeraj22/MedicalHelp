@@ -30,7 +30,9 @@ class LoginFragment : Fragment() {
             findNavController().navigate(R.id.action_loginFragment_to_forgetPasswordFragment)
         }
         binding.signUpBtn.setOnClickListener {
-            findNavController().navigate(R.id.action_loginFragment_to_registerFragment)
+            val bundle=Bundle()
+            bundle.putString("from","login")
+            findNavController().navigate(R.id.action_loginFragment_to_registerFragment,bundle)
         }
         binding.phoneSignInBtn.setOnClickListener {
             findNavController().navigate(R.id.action_loginFragment_to_loginWithPhoneFragment)
